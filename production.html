@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta keywords="">
+        <title>iNOKiM</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <style media="screen">
+            @media (min-width: 992px) {
+                .carousel {
+                    height: 540px;
+                    background-color: #000;
+                }
+                .carousel .item{
+                    height: 540px;
+                    background-color: #000;
+                }
+            }
+
+            @media (min-width: 501px) and (max-width:991px) {
+                .carousel {
+                    height: 440px;
+                    background-color: #000;
+                }
+                .carousel .item{
+                    height: 440px;
+                    background-color: #000;
+                }
+            }
+
+            @media (max-width: 500px) {
+                .carousel {
+                    height: 270px;
+                    background-color: #000;
+                }
+                .carousel .item{
+                    height: 270px;
+                    background-color: #000;
+                }
+            }
+
+            .carousel-inner .img{
+                width: 100%;
+            }
+            #gotop {
+                display: none;
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+                padding: 10px 15px;
+                font-size: 20px;
+                background: #777;
+                color: white;
+                cursor: pointer;
+            }
+            .jiange {
+                margin:30px;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <script type="text/javascript">
+            $(function(){
+                $("#gotop").click(function(){
+                    jQuery("html,body").animate({
+                        scrollTop:0
+                    },1000);
+                });
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 300){
+                        $('#gotop').fadeIn("fast");
+                    } else {
+                        $('#gotop').stop().fadeOut("fast");
+                    }
+                });
+            });
+        </script>
+        <header>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <!--span class="icon-bar"></span-->
+                        <span class="icon-bar"></span>
+                     </button>
+                     <a href="index.html" class="navbar-brand">
+                         <img style="width:100px; height:30px" alt="inokim inokim" title="inokim" src="images/logo.png">
+                     </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+              	     <ul class="nav navbar-nav nav-tabs pull-right">
+                         <li><a href="index.html">Home</a></li>
+                		 <li class="active"><a href="production.html"><span class="topinfo">Production</span></a></li>
+                         <li class="dropdown">
+                             <a class="dropdown-toggle" data-toggle="dropdown">Specification<span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="datalight.html">Light</a></li>
+                                 <li class="nav-divider"></li>
+                                 <li><a href="dataquick.html">Quick 2</a></li>
+                             </ul>
+                         </li>
+                		 <li><a href="aboutus.html">About us</a></li>
+          	 	     </ul>
+                 </div>
+             </div>
+        </header>
+
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+                <li data-target="#mycarousel" data-slide-to="4"></li>
+                <li data-target="#mycarousel" data-slide-to="5"></li>
+                <li data-target="#mycarousel" data-slide-to="6"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/mycarousel0.png" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mycarousel1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mycarousel2.png" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mycarousel3.png" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mycarousel4.png" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mycarousel5.png" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mycarousel6.png" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="jiange"></div>
+        <!--div class="row" style="text-align:center">
+            <div class="col-md-4">
+                <img class="img-circle" src="images/team-1.png" alt="" >
+                <h2> tcvxeam1</h2>
+                <p> teaxcbxm1</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle" src="images/team-1.png" alt="" >
+                <h2> tdfsdf2</h2>
+                <p> tdsfm2</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle" src="images/team-1.png" alt="" >
+                <h2> tesdfsdfam3</h2>
+                <p> teasdfsdfm3</p>
+            </div>
+        </div-->
+        <div class="jiange"></div>
+        <hr/>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Black1-1.jpg"
+                    alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Blue1-1.jpg"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Green1-1.jpg"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Orange1-1.jpg"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/White1-1.jpg"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <p><span style="font-size:30px;font-wight:bold;text-align:center;">Quick 2</span></p>
+            </div>
+        </div>
+        <div class="jiange">
+        </div>
+        <hr />
+
+        <div class="row">
+            <!--div class="col-sm-6 col-md-2">
+                <p><span style="font-size:30px;font-wight:bold;text-align:center;">Quick 2</span></p>
+            </div-->
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Black1-2.jpg"
+                    alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Blue1-2.jpg"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Green1-2.jpg"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/Orange1-2.jpg"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="dataquick.html" class="thumbnail">
+                    <img src="images/quick/White1-2.jpg"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="PZQY98KU3Q4L4">
+                    <table>
+                    <tr><td><input type="hidden" name="on0" value="Model">Model</td></tr><tr><td><select name="os0">
+                    	<option value="Medium">Medium € 1.00 EUR</option>
+                    	<option value="Hero">Hero € 2.00 EUR</option>
+                    	<option value="Super">Super € 3.00 EUR</option>
+                    </select> </td></tr>
+                    <tr><td><input type="hidden" name="on1" value="Color">Color</td></tr><tr><td><select name="os1">
+                    	<option value="Black">Black </option>
+                    	<option value="White">White </option>
+                    	<option value="Green">Green </option>
+                    	<option value="Orange">Orange </option>
+                    	<option value="Blue">Blue </option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="image" src="https://www.paypalobjects.com/zh_XC/C2/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+        <div class="jiange">
+        </div>
+        <hr />
+
+        <div class="row">
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light1.png"
+                    alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light2.png"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light3.png"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light4.png"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light5.png"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <p><span style="font-size:30px;font-wight:bold;text-align:center;">Light</span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light6.png"
+                    alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light7.png"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light8.png"
+                 alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light9.png"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="datalight.html" class="thumbnail">
+                    <img src="images/light/light10.png"
+                 alt=" ">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="MEZ2SG4FB5CA6">
+                <table>
+                <tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+                	<option value="Green">Green € 2.00 EUR</option>
+                	<option value="Black">Black € 2.00 EUR</option>
+                	<option value="Blue">Blue € 2.00 EUR</option>
+                	<option value="Orange">Orange € 2.00 EUR</option>
+                	<option value="White">White € 2.00 EUR</option>
+                </select> </td></tr>
+                </table>
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="image" src="https://www.paypalobjects.com/zh_XC/C2/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+                <img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+
+        <!--div class="row">
+            <div class="col-md-7 col-md-push-6">
+                <h2 style="text-align:center;"> jie shao</h2>
+                <p style="text-align:center;">dsfdsfds </p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img src="images/test.png" alt="test.png">
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                <h2> jie shao</h2>
+                <p>dsfdsfds </p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/test.png" alt="test.png">
+            </div>
+        </div>
+        <div class="jiange">
+        </div-->
+        <div id="gotop"><img src="images/arr.png"></div>
+        <div class="panel-footer">
+            <p class="text-center">Copyright &copy; Homting 2015</p>
+        </div>
+
+
+        <div class="sharebox" >
+            <div class="social-icons">
+                <p><a target="_blank"
+                href="http://www.facebook.com/share.php?u=homting.github.io"
+                class="fa fa-facebook"></a></p>
+                <p><a href="http://twitter.com/home?status=Currentlyreading
+                    <?php the_permalink(); ?>" title="Click to share this post on Twitter"
+                    class="fa fa-twitter"></a></p>
+                <p><a href="#" class="fa fa-google-plus"></a></p>
+            </div>
+        </div>
+
+    </body>
+</html>
